@@ -18,6 +18,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emailTF.delegate = self
+        passwordTF.delegate = self
 
         ref = Database.database().reference(withPath: "users")
 
@@ -27,9 +30,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             self?.emailTF.text = nil
             self?.passwordTF.text = nil
         }
-        
-        
-        
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
