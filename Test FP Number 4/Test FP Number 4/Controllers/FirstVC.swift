@@ -33,23 +33,11 @@ class FirstVC: UIViewController {
     
     @IBAction func personalAccoutButton(_ sender: UIBarButtonItem) {}
     
-    @IBAction func photoButton() {
-        
-    }
+    @IBAction func photoButton() {}
     
     @IBAction func newsButton() {}
     
     @IBAction func mapButton() {}
     
     @IBAction func storiesButton() {}
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "showPosts",
-//           let postsVC = segue.destination as? PostsTableViewController {
-//            postsVC.user = user
-//        } else if segue.identifier == "albomsSegue",
-//                  let albomsTableVC = segue.destination as? AlbomsTableVC {
-//            albomsTableVC.user = user
-//        }
-//    }
 }
