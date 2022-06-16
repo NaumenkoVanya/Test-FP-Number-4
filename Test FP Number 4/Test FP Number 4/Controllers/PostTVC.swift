@@ -8,6 +8,7 @@
 import UIKit
 
 class PostTVC: UITableViewController {
+    
     var posts: [Post] = []
 
     override func viewDidLoad() {

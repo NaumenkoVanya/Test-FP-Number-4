@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA7E345F285AFFD2006DACA7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E345E285AFFD2006DACA7 /* LoginVC.swift */; };
+		CA7E346C285B0F1B006DACA7 /* PostsAndComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7E346B285B0F1B006DACA7 /* PostsAndComments.storyboard */; };
+		CA7E346E285B0F3B006DACA7 /* AlbomsAndPhotos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7E346D285B0F3B006DACA7 /* AlbomsAndPhotos.storyboard */; };
+		CA7E3470285B13E9006DACA7 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7E346F285B13E9006DACA7 /* Map.storyboard */; };
+		CA7E3472285B1430006DACA7 /* MotoworldNews .storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7E3471285B1430006DACA7 /* MotoworldNews .storyboard */; };
 		CA8A192C2858CED400844688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A192B2858CED400844688 /* AppDelegate.swift */; };
 		CA8A192E2858CED400844688 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A192D2858CED400844688 /* SceneDelegate.swift */; };
 		CA8A19332858CED400844688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8A19312858CED400844688 /* Main.storyboard */; };
@@ -18,13 +23,16 @@
 		CA8A194B2858D85500844688 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A194A2858D85500844688 /* User.swift */; };
 		CA8A194D2858D85900844688 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A194C2858D85900844688 /* Models.swift */; };
 		CA8A19532858D87B00844688 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A194E2858D87B00844688 /* FirstVC.swift */; };
-		CA8A19542858D87B00844688 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A194F2858D87B00844688 /* LoginVC.swift */; };
 		CA8A19552858D87B00844688 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A19502858D87B00844688 /* MapVC.swift */; };
 		CA8A19562858D87B00844688 /* PostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A19512858D87B00844688 /* PostTVC.swift */; };
-		CA8A19572858D87B00844688 /* PostAndComents in Resources */ = {isa = PBXBuildFile; fileRef = CA8A19522858D87B00844688 /* PostAndComents */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA7E345E285AFFD2006DACA7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CA7E346B285B0F1B006DACA7 /* PostsAndComments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostsAndComments.storyboard; sourceTree = "<group>"; };
+		CA7E346D285B0F3B006DACA7 /* AlbomsAndPhotos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbomsAndPhotos.storyboard; sourceTree = "<group>"; };
+		CA7E346F285B13E9006DACA7 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		CA7E3471285B1430006DACA7 /* MotoworldNews .storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "MotoworldNews .storyboard"; sourceTree = "<group>"; };
 		CA8A19282858CED400844688 /* Test FP Number 4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test FP Number 4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8A192B2858CED400844688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA8A192D2858CED400844688 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,10 +44,8 @@
 		CA8A194A2858D85500844688 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CA8A194C2858D85900844688 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CA8A194E2858D87B00844688 /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
-		CA8A194F2858D87B00844688 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		CA8A19502858D87B00844688 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		CA8A19512858D87B00844688 /* PostTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTVC.swift; sourceTree = "<group>"; };
-		CA8A19522858D87B00844688 /* PostAndComents */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PostAndComents; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA7E3464285B0639006DACA7 /* AlbomsAndPhotos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AlbomsAndPhotos;
+			sourceTree = "<group>";
+		};
 		CA8A191F2858CED300844688 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,10 @@
 			children = (
 				CA8A19362858CED400844688 /* LaunchScreen.storyboard */,
 				CA8A19312858CED400844688 /* Main.storyboard */,
+				CA7E346D285B0F3B006DACA7 /* AlbomsAndPhotos.storyboard */,
+				CA7E346F285B13E9006DACA7 /* Map.storyboard */,
+				CA7E346B285B0F1B006DACA7 /* PostsAndComments.storyboard */,
+				CA7E3471285B1430006DACA7 /* MotoworldNews .storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -106,9 +123,9 @@
 		CA8A19412858CF0600844688 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CA8A19522858D87B00844688 /* PostAndComents */,
+				CA7E3464285B0639006DACA7 /* AlbomsAndPhotos */,
+				CA7E345E285AFFD2006DACA7 /* LoginVC.swift */,
 				CA8A194E2858D87B00844688 /* FirstVC.swift */,
-				CA8A194F2858D87B00844688 /* LoginVC.swift */,
 				CA8A19502858D87B00844688 /* MapVC.swift */,
 				CA8A19512858D87B00844688 /* PostTVC.swift */,
 			);
@@ -190,10 +207,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA8A19382858CED400844688 /* LaunchScreen.storyboard in Resources */,
+				CA7E3470285B13E9006DACA7 /* Map.storyboard in Resources */,
 				CA8A19492858D60000844688 /* GoogleService-Info.plist in Resources */,
+				CA7E346C285B0F1B006DACA7 /* PostsAndComments.storyboard in Resources */,
+				CA7E3472285B1430006DACA7 /* MotoworldNews .storyboard in Resources */,
 				CA8A19352858CED400844688 /* Assets.xcassets in Resources */,
 				CA8A19332858CED400844688 /* Main.storyboard in Resources */,
-				CA8A19572858D87B00844688 /* PostAndComents in Resources */,
+				CA7E346E285B0F3B006DACA7 /* AlbomsAndPhotos.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +226,7 @@
 			files = (
 				CA8A192C2858CED400844688 /* AppDelegate.swift in Sources */,
 				CA8A192E2858CED400844688 /* SceneDelegate.swift in Sources */,
-				CA8A19542858D87B00844688 /* LoginVC.swift in Sources */,
+				CA7E345F285AFFD2006DACA7 /* LoginVC.swift in Sources */,
 				CA8A19562858D87B00844688 /* PostTVC.swift in Sources */,
 				CA8A194B2858D85500844688 /* User.swift in Sources */,
 				CA8A19552858D87B00844688 /* MapVC.swift in Sources */,

@@ -45,7 +45,7 @@ class MapVC: UIViewController {
             mapView.showsUserLocation = true
             locationManager.startUpdatingLocation()
         case .denied:
-            showAlertLocation(title: "У Вас отключено определение местоположение", message: "Хотете это изменрть?", url: URL(string: UIApplication.openSettingsURLString))
+            showAlertLocation(title: "У Вас отключено определение местоположение", message: "Хотете это изменить?", url: URL(string: UIApplication.openSettingsURLString))
         case .restricted:
             break
         case .notDetermined:
