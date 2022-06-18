@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="1506" y="875"/>
         </scene>
-        <!--View Controller-->
+        <!--Add PostVC-->
         <scene sceneID="9Ny-8s-kXr">
             <objects>
-                <viewController id="cyy-6X-CEU" sceneMemberID="viewController">
+                <viewController id="cyy-6X-CEU" customClass="AddPostVC" customModule="Test_FP_Number_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nSo-8y-Pcy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,6 +56,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="cyy-6X-CEU" id="RiS-hM-2MS"/>
+                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OZS-Ai-kgQ">
                                 <rect key="frame" x="20" y="116.5" width="374" height="595.5"/>
@@ -63,6 +66,9 @@
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="cyy-6X-CEU" id="dLT-9g-B0h"/>
+                                </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUo-zD-bjk">
                                 <rect key="frame" x="99" y="732" width="220" height="40"/>
@@ -104,6 +110,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="E9Y-l8-N5f"/>
+                    <connections>
+                        <outlet property="textView" destination="OZS-Ai-kgQ" id="ZDP-2J-qtI"/>
+                        <outlet property="titlePost" destination="lrx-LY-6Sj" id="b1p-ao-cZf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V5Y-kn-rvE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
