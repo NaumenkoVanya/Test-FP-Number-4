@@ -11,9 +11,7 @@
 		CA7E346C285B0F1B006DACA7 /* PostsAndComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7E346B285B0F1B006DACA7 /* PostsAndComments.storyboard */; };
 		CA7E346E285B0F3B006DACA7 /* AlbomsAndPhotos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7E346D285B0F3B006DACA7 /* AlbomsAndPhotos.storyboard */; };
 		CA7E3470285B13E9006DACA7 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7E346F285B13E9006DACA7 /* Map.storyboard */; };
-		CA7E3472285B1430006DACA7 /* MotoworldNews .storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7E3471285B1430006DACA7 /* MotoworldNews .storyboard */; };
 		CA7E3474285B16A0006DACA7 /* PhotosCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E3473285B16A0006DACA7 /* PhotosCVC.swift */; };
-		CA7E3476285B1701006DACA7 /* MotoworldNewTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E3475285B1701006DACA7 /* MotoworldNewTVC.swift */; };
 		CA8A192C2858CED400844688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A192B2858CED400844688 /* AppDelegate.swift */; };
 		CA8A192E2858CED400844688 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A192D2858CED400844688 /* SceneDelegate.swift */; };
 		CA8A19332858CED400844688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8A19312858CED400844688 /* Main.storyboard */; };
@@ -34,9 +32,7 @@
 		CA7E346B285B0F1B006DACA7 /* PostsAndComments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostsAndComments.storyboard; sourceTree = "<group>"; };
 		CA7E346D285B0F3B006DACA7 /* AlbomsAndPhotos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbomsAndPhotos.storyboard; sourceTree = "<group>"; };
 		CA7E346F285B13E9006DACA7 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
-		CA7E3471285B1430006DACA7 /* MotoworldNews .storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "MotoworldNews .storyboard"; sourceTree = "<group>"; };
 		CA7E3473285B16A0006DACA7 /* PhotosCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCVC.swift; sourceTree = "<group>"; };
-		CA7E3475285B1701006DACA7 /* MotoworldNewTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotoworldNewTVC.swift; sourceTree = "<group>"; };
 		CA8A19282858CED400844688 /* Test FP Number 4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test FP Number 4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8A192B2858CED400844688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA8A192D2858CED400844688 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,7 +108,6 @@
 				CA7E346D285B0F3B006DACA7 /* AlbomsAndPhotos.storyboard */,
 				CA7E346F285B13E9006DACA7 /* Map.storyboard */,
 				CA7E346B285B0F1B006DACA7 /* PostsAndComments.storyboard */,
-				CA7E3471285B1430006DACA7 /* MotoworldNews .storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,7 +120,6 @@
 				CA8A19502858D87B00844688 /* MapVC.swift */,
 				CA8A19512858D87B00844688 /* PostTVC.swift */,
 				CA7E3473285B16A0006DACA7 /* PhotosCVC.swift */,
-				CA7E3475285B1701006DACA7 /* MotoworldNewTVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -208,7 +202,6 @@
 				CA7E3470285B13E9006DACA7 /* Map.storyboard in Resources */,
 				CA8A19492858D60000844688 /* GoogleService-Info.plist in Resources */,
 				CA7E346C285B0F1B006DACA7 /* PostsAndComments.storyboard in Resources */,
-				CA7E3472285B1430006DACA7 /* MotoworldNews .storyboard in Resources */,
 				CA8A19352858CED400844688 /* Assets.xcassets in Resources */,
 				CA8A19332858CED400844688 /* Main.storyboard in Resources */,
 				CA7E346E285B0F3B006DACA7 /* AlbomsAndPhotos.storyboard in Resources */,
@@ -224,7 +217,6 @@
 			files = (
 				CA8A192C2858CED400844688 /* AppDelegate.swift in Sources */,
 				CA8A192E2858CED400844688 /* SceneDelegate.swift in Sources */,
-				CA7E3476285B1701006DACA7 /* MotoworldNewTVC.swift in Sources */,
 				CA7E345F285AFFD2006DACA7 /* LoginVC.swift in Sources */,
 				CA8A19562858D87B00844688 /* PostTVC.swift in Sources */,
 				CA8A194B2858D85500844688 /* User.swift in Sources */,

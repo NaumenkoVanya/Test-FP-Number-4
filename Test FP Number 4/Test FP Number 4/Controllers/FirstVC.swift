@@ -7,6 +7,7 @@
 
 import Firebase
 import UIKit
+import SafariServices
 
 class FirstVC: UIViewController {
     override func viewDidLoad() {
@@ -35,9 +36,15 @@ class FirstVC: UIViewController {
     
     @IBAction func photoButton() {}
     
-    @IBAction func newsButton() {}
+    @IBAction func newsButton() {
+        if let url = URL(string: "https://in-moto.ru/novosti/") {
+            let svc = SFSafariViewController(url: url)
+            present(svc, animated: true, completion: nil)
+        }
+    }
     
     @IBAction func mapButton() {}
     
     @IBAction func storiesButton() {}
 }
+

@@ -136,7 +136,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUx-xv-sxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="-74"/>
+            <point key="canvasLocation" x="1213" y="71"/>
         </scene>
         <!--PostsAndComments-->
         <scene sceneID="Q7I-bU-OkG">
@@ -146,7 +146,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dzj-3f-bA0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1137" y="296"/>
+            <point key="canvasLocation" x="1221" y="138"/>
         </scene>
         <!--Map-->
         <scene sceneID="muW-XN-9lo">
@@ -156,17 +156,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dB4-ON-sRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="159"/>
-        </scene>
-        <!--MotoworldNews -->
-        <scene sceneID="14A-TV-lG7">
-            <objects>
-                <viewControllerPlaceholder storyboardName="MotoworldNews " id="yur-Aa-WWV" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Ax3-cq-iuW"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DXs-2K-9wM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1130" y="69"/>
+            <point key="canvasLocation" x="1151" y="104"/>
         </scene>
         <!--Title-->
         <scene sceneID="ym5-MT-j2a">
@@ -210,7 +200,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="newsButton" destination="aMu-xb-0e3" eventType="touchUpInside" id="h2B-8x-v1e"/>
-                                            <segue destination="yur-Aa-WWV" kind="show" id="EQz-O0-SiP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lt1-Ic-VfM">
