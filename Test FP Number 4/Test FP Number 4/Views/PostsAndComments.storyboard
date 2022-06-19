@@ -87,6 +87,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveButton" destination="cyy-6X-CEU" eventType="touchUpInside" id="k7z-RZ-WGD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uTO-YE-H5W"/>

@@ -6,30 +6,49 @@
 //
 
 import UIKit
+import Firebase
 
 class PostTVC: UITableViewController {
-    var posts: [Post] = []
+    var user: User!
+    var ref: DatabaseReference!
+    var posts: [Posts] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        // достаем текущего пользователя
+        guard let postUser = Auth.auth().currentUser else { return }
+        // сохраним currentUser
+        user = User(user: postUser)
+        // создаем reference
+        ref = Database.database().reference(withPath: "users").child(String(user.uidi)).child("posts")
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // наблюдатель за значениями
+        ref.observe(DataEventType.value) { [weak self] snapshot in
+            var posts = [Posts]()
+            for item in snapshot.children { // вытаскиваем все tasks
+                guard let snapshot = item as? DataSnapshot,
+                      let post = Posts(snapshot: snapshot) else { continue }
+                posts.append(post)
+            }
+            self?.posts = posts
+            self?.tableView.reloadData()
+        }
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return posts.count
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return posts.count
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return posts.count
+        
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -38,48 +57,4 @@ class PostTVC: UITableViewController {
         return cell
     }
 
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-         // Return false if you do not want the specified item to be editable.
-         return true
-     }
-     */
-
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-         if editingStyle == .delete {
-             // Delete the row from the data source
-             tableView.deleteRows(at: [indexPath], with: .fade)
-         } else if editingStyle == .insert {
-             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-         }
-     }
-     */
-
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-     }
-     */
-
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-         // Return false if you do not want the item to be re-orderable.
-         return true
-     }
-     */
-
-    /*
-     // MARK: - Navigation
-
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-     }
-     */
 }
