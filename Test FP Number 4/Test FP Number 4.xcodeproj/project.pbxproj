@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA3F949828605DFC0095670F /* PersonalArea.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3F949728605DFC0095670F /* PersonalArea.storyboard */; };
+		CA3F949C2860601F0095670F /* PersonalAreaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3F949B2860601F0095670F /* PersonalAreaVC.swift */; };
+		CA3F949E286106F70095670F /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3F949D286106F70095670F /* PostVC.swift */; };
 		CA432EB0285F3E2E00EEC3BA /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA432EAF285F3E2E00EEC3BA /* Posts.swift */; };
 		CA7E345F285AFFD2006DACA7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E345E285AFFD2006DACA7 /* LoginVC.swift */; };
 		CA7E346C285B0F1B006DACA7 /* PostsAndComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7E346B285B0F1B006DACA7 /* PostsAndComments.storyboard */; };
@@ -30,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA3F949728605DFC0095670F /* PersonalArea.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalArea.storyboard; sourceTree = "<group>"; };
+		CA3F949B2860601F0095670F /* PersonalAreaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalAreaVC.swift; sourceTree = "<group>"; };
+		CA3F949D286106F70095670F /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		CA432EAF285F3E2E00EEC3BA /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		CA7E345E285AFFD2006DACA7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		CA7E346B285B0F1B006DACA7 /* PostsAndComments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostsAndComments.storyboard; sourceTree = "<group>"; };
@@ -79,6 +85,7 @@
 			children = (
 				CA8A19512858D87B00844688 /* PostTVC.swift */,
 				CA864AFA285DE93E00029C20 /* AddPostVC.swift */,
+				CA3F949D286106F70095670F /* PostVC.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -147,6 +154,7 @@
 				CA7E346D285B0F3B006DACA7 /* AlbomsAndPhotos.storyboard */,
 				CA7E346F285B13E9006DACA7 /* Map.storyboard */,
 				CA7E346B285B0F1B006DACA7 /* PostsAndComments.storyboard */,
+				CA3F949728605DFC0095670F /* PersonalArea.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +166,7 @@
 				CA864AFC285DEA0F00029C20 /* Posts */,
 				CA864AFE285DEDD400029C20 /* Login and First VC */,
 				CA864AFD285DEDB900029C20 /* Map */,
+				CA3F949B2860601F0095670F /* PersonalAreaVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -239,6 +248,7 @@
 				CA8A19382858CED400844688 /* LaunchScreen.storyboard in Resources */,
 				CA7E3470285B13E9006DACA7 /* Map.storyboard in Resources */,
 				CA8A19492858D60000844688 /* GoogleService-Info.plist in Resources */,
+				CA3F949828605DFC0095670F /* PersonalArea.storyboard in Resources */,
 				CA7E346C285B0F1B006DACA7 /* PostsAndComments.storyboard in Resources */,
 				CA8A19352858CED400844688 /* Assets.xcassets in Resources */,
 				CA8A19332858CED400844688 /* Main.storyboard in Resources */,
@@ -253,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3F949E286106F70095670F /* PostVC.swift in Sources */,
 				CA8A192C2858CED400844688 /* AppDelegate.swift in Sources */,
+				CA3F949C2860601F0095670F /* PersonalAreaVC.swift in Sources */,
 				CA8A192E2858CED400844688 /* SceneDelegate.swift in Sources */,
 				CA864AF6285DD8DC00029C20 /* ImageVC.swift in Sources */,
 				CA7E345F285AFFD2006DACA7 /* LoginVC.swift in Sources */,

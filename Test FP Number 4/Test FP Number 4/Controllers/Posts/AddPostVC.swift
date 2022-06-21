@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - AddPostVC
 
-class AddPostVC: UIViewController {
+final class AddPostVC: UIViewController {
     var user: User!
     var ref: DatabaseReference!
     var posts = [Posts]()
@@ -27,12 +27,12 @@ class AddPostVC: UIViewController {
 
     @IBAction func saveButton() {
         if let titleText = titlePost.text,
-           let postText = textView.text {
+           let postText = textView.text
+        {
             let post = Posts(title: titleText, userId: "\(user.uidi)", post: "\(postText)")
             let postRef = ref.child(post.title.lowercased())
             postRef.setValue(post.convertToDictionary())
         } else { return }
-        self.dismiss(animated: true, completion: nil)
     }
 }
 

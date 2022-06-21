@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - MapVC
 
-class MapVC: UIViewController {
+final class MapVC: UIViewController {
     @IBOutlet var mapView: MKMapView!
 
     let locationManager = CLLocationManager()
@@ -28,13 +28,14 @@ class MapVC: UIViewController {
             setupManager()
             checkAuthorization()
         } else {
-            showAlertLocation(title: "У вас выключена служба геолокации", message: "Хотите включить?", url: URL(string: "App-Prefs:root=LOCATION_SERVISES"))
+            showAlertLocation(title: "У Вас выключена служба геолокации", message: "Хотите включить?", url: URL(string: "App-Prefs:root=LOCATION_SERVISES"))
         }
     }
 
     func setupManager() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
     }
 
     func checkAuthorization() {

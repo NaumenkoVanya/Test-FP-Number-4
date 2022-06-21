@@ -8,7 +8,7 @@
 import Firebase
 import UIKit
 
-class LoginVC: UIViewController, UITextFieldDelegate {
+final class LoginVC: UIViewController, UITextFieldDelegate {
     var ref: DatabaseReference!
 
     @IBOutlet var warnLabel: UILabel!
@@ -18,7 +18,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         emailTF.delegate = self
         passwordTF.delegate = self
 

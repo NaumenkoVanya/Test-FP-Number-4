@@ -24,6 +24,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="uBE-ke-ZXL" kind="modal" trigger="accessoryAction" modalPresentationStyle="fullScreen" id="Ag4-UO-iE7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -121,6 +124,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V5Y-kn-rvE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2478.2608695652175" y="569.86607142857144"/>
+        </scene>
+        <!--PostVC-->
+        <scene sceneID="Gbr-aA-15z">
+            <objects>
+                <viewController storyboardIdentifier="PostVC" id="uBE-ke-ZXL" customClass="PostVC" customModule="Test_FP_Number_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pJc-ZD-wzg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYN-i1-MCf">
+                                <rect key="frame" x="20" y="44" width="374" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WDh-nx-9ii"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqj-RS-2MA">
+                                <rect key="frame" x="20" y="104" width="374" height="738"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Qs-y1-OTH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Qs-y1-OTH" firstAttribute="trailing" secondItem="lYN-i1-MCf" secondAttribute="trailing" constant="20" id="8f9-Nk-zWT"/>
+                            <constraint firstItem="8Qs-y1-OTH" firstAttribute="trailing" secondItem="dqj-RS-2MA" secondAttribute="trailing" constant="20" id="Nxz-Vs-IzQ"/>
+                            <constraint firstItem="lYN-i1-MCf" firstAttribute="leading" secondItem="8Qs-y1-OTH" secondAttribute="leading" constant="20" id="P6A-Ft-lY6"/>
+                            <constraint firstItem="lYN-i1-MCf" firstAttribute="top" secondItem="8Qs-y1-OTH" secondAttribute="top" id="Tcd-RX-tcA"/>
+                            <constraint firstItem="8Qs-y1-OTH" firstAttribute="bottom" secondItem="dqj-RS-2MA" secondAttribute="bottom" constant="20" id="kp0-Bu-eLI"/>
+                            <constraint firstItem="dqj-RS-2MA" firstAttribute="top" secondItem="lYN-i1-MCf" secondAttribute="bottom" constant="10" id="oCO-MZ-egV"/>
+                            <constraint firstItem="dqj-RS-2MA" firstAttribute="leading" secondItem="8Qs-y1-OTH" secondAttribute="leading" constant="20" id="tR7-wP-HYm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="B8Z-ZW-Zx9"/>
+                    <connections>
+                        <outlet property="textPostLabel" destination="dqj-RS-2MA" id="K0H-SK-t9X"/>
+                        <outlet property="titleLabel" destination="lYN-i1-MCf" id="cqx-ux-oBh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AVn-qT-R1G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2478" y="1228"/>
         </scene>
     </scenes>
     <resources>

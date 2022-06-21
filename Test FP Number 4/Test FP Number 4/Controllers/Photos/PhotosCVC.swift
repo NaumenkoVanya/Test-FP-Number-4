@@ -11,7 +11,7 @@ private let reuseIdentifier = "Cell"
 
 // MARK: - PhotosCVC
 
-class PhotosCVC: UICollectionViewController {
+final class PhotosCVC: UICollectionViewController {
     var images = [UIImage]()
 
     override func viewDidLoad() {

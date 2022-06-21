@@ -9,19 +9,18 @@ import Firebase
 import Foundation
 
 struct Posts {
-    
     // MARK: Internal
 
     let title: String
     let userId: String
     let post: String
     let ref: DatabaseReference?
-   
+
     init(title: String, userId: String, post: String) {
         self.title = title
         self.userId = userId
         self.post = post
-        self.ref = nil
+        ref = nil
     }
 
     init?(snapshot: DataSnapshot) {

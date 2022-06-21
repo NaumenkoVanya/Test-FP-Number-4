@@ -5,10 +5,10 @@
 //  Created by Ваня Науменко on 8.06.22.
 //
 
-import UIKit
 import Firebase
+import UIKit
 
-class PostTVC: UITableViewController {
+final class PostTVC: UITableViewController {
     var user: User!
     var ref: DatabaseReference!
     var posts: [Posts] = []
@@ -21,8 +21,9 @@ class PostTVC: UITableViewController {
         // сохраним currentUser
         user = User(user: postUser)
         // создаем reference
-        ref = Database.database().reference(withPath: "users").child(String(user.uidi)).child("posts")
+        ref = Database.database().reference(withPath: user.uidi).child(String(user.uidi)).child("posts")
     }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // наблюдатель за значениями
@@ -46,9 +47,7 @@ class PostTVC: UITableViewController {
 //    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return posts.count
-        
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -57,4 +56,9 @@ class PostTVC: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let cell = tableView.cellForRow(at: indexPath)
+        guard let cell = UIViewController() as? PostVC else { return }
+        present(cell, animated: true, completion: nil)
+    }
 }

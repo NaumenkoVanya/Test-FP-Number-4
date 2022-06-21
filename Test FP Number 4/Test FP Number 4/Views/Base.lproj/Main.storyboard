@@ -128,6 +128,16 @@
             </objects>
             <point key="canvasLocation" x="-197" y="104"/>
         </scene>
+        <!--PersonalArea-->
+        <scene sceneID="1Fy-hK-bC8">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PersonalAreaVC" storyboardName="PersonalArea" id="paq-eQ-DaI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gw7-G7-4Rn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U8H-O5-J35" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085" y="56"/>
+        </scene>
         <!--AlbomsAndPhotos-->
         <scene sceneID="noR-ay-rMD">
             <objects>
@@ -136,7 +146,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUx-xv-sxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1213" y="71"/>
+            <point key="canvasLocation" x="1107" y="86"/>
         </scene>
         <!--PostsAndComments-->
         <scene sceneID="Q7I-bU-OkG">
@@ -146,7 +156,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dzj-3f-bA0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1221" y="138"/>
+            <point key="canvasLocation" x="1115" y="155"/>
         </scene>
         <!--Map-->
         <scene sceneID="muW-XN-9lo">
@@ -156,7 +166,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dB4-ON-sRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1151" y="104"/>
+            <point key="canvasLocation" x="1045" y="121"/>
         </scene>
         <!--Title-->
         <scene sceneID="ym5-MT-j2a">
@@ -253,6 +263,7 @@
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="personalAccoutButton:" destination="aMu-xb-0e3" id="Dni-88-OXV"/>
+                                <segue destination="paq-eQ-DaI" kind="show" id="l6I-Mx-t0i"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
