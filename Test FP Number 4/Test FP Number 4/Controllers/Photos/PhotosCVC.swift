@@ -12,6 +12,7 @@ private let reuseIdentifier = "Cell"
 // MARK: - PhotosCVC
 
 final class PhotosCVC: UICollectionViewController {
+    var nextImage: UIImage?
     var images = [UIImage]()
 
     override func viewDidLoad() {
@@ -38,6 +39,18 @@ final class PhotosCVC: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count
+    }
+
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goDetailImage", sender: images[indexPath.row])
+//        if let imageView = storyboard?.instantiateViewController(withIdentifier: "goDetailImage") as? DetailVC { return }
+//        imageView = images[indexPath.row]
+        
+            
+        
+//        guard let detailsView = self.storyboard?.instantiateViewController(withIdentifier: "imageDetail") as? DetailVC else { return }
+//        nextImage = images[indexPath.item]
+//        detailsView.imageView.image = nextImage
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

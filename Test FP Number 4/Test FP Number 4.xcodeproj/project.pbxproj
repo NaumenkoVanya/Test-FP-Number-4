@@ -10,6 +10,7 @@
 		CA3F949828605DFC0095670F /* PersonalArea.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3F949728605DFC0095670F /* PersonalArea.storyboard */; };
 		CA3F949C2860601F0095670F /* PersonalAreaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3F949B2860601F0095670F /* PersonalAreaVC.swift */; };
 		CA3F949E286106F70095670F /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3F949D286106F70095670F /* PostVC.swift */; };
+		CA3F94A02861DEBF0095670F /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3F949F2861DEBF0095670F /* DetailVC.swift */; };
 		CA432EB0285F3E2E00EEC3BA /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA432EAF285F3E2E00EEC3BA /* Posts.swift */; };
 		CA7E345F285AFFD2006DACA7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E345E285AFFD2006DACA7 /* LoginVC.swift */; };
 		CA7E346C285B0F1B006DACA7 /* PostsAndComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7E346B285B0F1B006DACA7 /* PostsAndComments.storyboard */; };
@@ -36,6 +37,7 @@
 		CA3F949728605DFC0095670F /* PersonalArea.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalArea.storyboard; sourceTree = "<group>"; };
 		CA3F949B2860601F0095670F /* PersonalAreaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalAreaVC.swift; sourceTree = "<group>"; };
 		CA3F949D286106F70095670F /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		CA3F949F2861DEBF0095670F /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		CA432EAF285F3E2E00EEC3BA /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		CA7E345E285AFFD2006DACA7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		CA7E346B285B0F1B006DACA7 /* PostsAndComments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostsAndComments.storyboard; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				CA7E3473285B16A0006DACA7 /* PhotosCVC.swift */,
 				CA864AF5285DD8DC00029C20 /* ImageVC.swift */,
+				CA3F949F2861DEBF0095670F /* DetailVC.swift */,
 			);
 			path = Photos;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				CA8A19552858D87B00844688 /* MapVC.swift in Sources */,
 				CA8A19532858D87B00844688 /* FirstVC.swift in Sources */,
 				CA7E3474285B16A0006DACA7 /* PhotosCVC.swift in Sources */,
+				CA3F94A02861DEBF0095670F /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +429,9 @@
 				DEVELOPMENT_TEAM = VY6BU9F56X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Test FP Number 4/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Moto Travel";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -453,6 +460,9 @@
 				DEVELOPMENT_TEAM = VY6BU9F56X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Test FP Number 4/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Moto Travel";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

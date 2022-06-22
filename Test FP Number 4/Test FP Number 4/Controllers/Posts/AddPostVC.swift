@@ -33,6 +33,7 @@ final class AddPostVC: UIViewController {
             let postRef = ref.child(post.title.lowercased())
             postRef.setValue(post.convertToDictionary())
         } else { return }
+        self.navigationController?.popViewController(animated: true)
     }
 }
 

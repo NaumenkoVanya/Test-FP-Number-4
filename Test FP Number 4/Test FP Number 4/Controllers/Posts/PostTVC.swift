@@ -45,6 +45,9 @@ final class PostTVC: UITableViewController {
 //        // #warning Incomplete implementation, return the number of sections
 //        return posts.count
 //    }
+//    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 10
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
@@ -56,9 +59,20 @@ final class PostTVC: UITableViewController {
         return cell
     }
 
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+////        let cell = tableView.cellForRow(at: indexPath)
+//        guard let cell = UIViewController() as? PostVC else { return }
+//        present(cell, animated: true, completion: nil)
+//    }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let cell = tableView.cellForRow(at: indexPath)
-        guard let cell = UIViewController() as? PostVC else { return }
-        present(cell, animated: true, completion: nil)
-    }
+            performSegue(withIdentifier: "goInfo", sender: nil)
+        }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let toDoListTVC = segue.destination as? PostVC,
+               let indexPath = tableView.indexPathForSelectedRow {
+                toDoListTVC.titleText = posts[indexPath.row].title
+                toDoListTVC.postText = posts[indexPath.row].post
+            }
+        }
 }

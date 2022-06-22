@@ -9,11 +9,16 @@ import UIKit
 
 final class PostVC: UIViewController {
     
+    var titleText = ""
+    var postText = ""
+    
     @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var textPostLabel: UILabel!
-
+    @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        textView.text = postText
+        titleLabel.text = titleText
     }
 
     /*
