@@ -150,7 +150,11 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUx-xv-sxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< Updated upstream
             <point key="canvasLocation" x="1107" y="86"/>
+=======
+            <point key="canvasLocation" x="1191" y="72"/>
+>>>>>>> Stashed changes
         </scene>
         <!--PostsAndComments-->
         <scene sceneID="Q7I-bU-OkG">
@@ -160,7 +164,11 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dzj-3f-bA0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< Updated upstream
             <point key="canvasLocation" x="1115" y="155"/>
+=======
+            <point key="canvasLocation" x="1199" y="138"/>
+>>>>>>> Stashed changes
         </scene>
         <!--Map-->
         <scene sceneID="muW-XN-9lo">
@@ -170,7 +178,11 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dB4-ON-sRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< Updated upstream
             <point key="canvasLocation" x="1045" y="121"/>
+=======
+            <point key="canvasLocation" x="1129" y="104"/>
+>>>>>>> Stashed changes
         </scene>
         <!--Title-->
         <scene sceneID="ym5-MT-j2a">

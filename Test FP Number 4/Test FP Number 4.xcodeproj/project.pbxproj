@@ -17,8 +17,11 @@
 		CA7E346E285B0F3B006DACA7 /* AlbomsAndPhotos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7E346D285B0F3B006DACA7 /* AlbomsAndPhotos.storyboard */; };
 		CA7E3470285B13E9006DACA7 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7E346F285B13E9006DACA7 /* Map.storyboard */; };
 		CA7E3474285B16A0006DACA7 /* PhotosCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E3473285B16A0006DACA7 /* PhotosCVC.swift */; };
+<<<<<<< Updated upstream
 		CA864AF6285DD8DC00029C20 /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA864AF5285DD8DC00029C20 /* ImageVC.swift */; };
 		CA864AFB285DE93E00029C20 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA864AFA285DE93E00029C20 /* AddPostVC.swift */; };
+=======
+>>>>>>> Stashed changes
 		CA8A192C2858CED400844688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A192B2858CED400844688 /* AppDelegate.swift */; };
 		CA8A192E2858CED400844688 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A192D2858CED400844688 /* SceneDelegate.swift */; };
 		CA8A19332858CED400844688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8A19312858CED400844688 /* Main.storyboard */; };
@@ -44,8 +47,11 @@
 		CA7E346D285B0F3B006DACA7 /* AlbomsAndPhotos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbomsAndPhotos.storyboard; sourceTree = "<group>"; };
 		CA7E346F285B13E9006DACA7 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		CA7E3473285B16A0006DACA7 /* PhotosCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCVC.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
 		CA864AF5285DD8DC00029C20 /* ImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
 		CA864AFA285DE93E00029C20 /* AddPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> Stashed changes
 		CA8A19282858CED400844688 /* Test FP Number 4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test FP Number 4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8A192B2858CED400844688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA8A192D2858CED400844688 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,7 +163,10 @@
 				CA7E346D285B0F3B006DACA7 /* AlbomsAndPhotos.storyboard */,
 				CA7E346F285B13E9006DACA7 /* Map.storyboard */,
 				CA7E346B285B0F1B006DACA7 /* PostsAndComments.storyboard */,
+<<<<<<< Updated upstream
 				CA3F949728605DFC0095670F /* PersonalArea.storyboard */,
+=======
+>>>>>>> Stashed changes
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,11 +174,19 @@
 		CA8A19412858CF0600844688 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< Updated upstream
 				CA864AF7285DE59900029C20 /* Photos */,
 				CA864AFC285DEA0F00029C20 /* Posts */,
 				CA864AFE285DEDD400029C20 /* Login and First VC */,
 				CA864AFD285DEDB900029C20 /* Map */,
 				CA3F949B2860601F0095670F /* PersonalAreaVC.swift */,
+=======
+				CA7E345E285AFFD2006DACA7 /* LoginVC.swift */,
+				CA8A194E2858D87B00844688 /* FirstVC.swift */,
+				CA8A19502858D87B00844688 /* MapVC.swift */,
+				CA8A19512858D87B00844688 /* PostTVC.swift */,
+				CA7E3473285B16A0006DACA7 /* PhotosCVC.swift */,
+>>>>>>> Stashed changes
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -270,7 +287,10 @@
 				CA8A192C2858CED400844688 /* AppDelegate.swift in Sources */,
 				CA3F949C2860601F0095670F /* PersonalAreaVC.swift in Sources */,
 				CA8A192E2858CED400844688 /* SceneDelegate.swift in Sources */,
+<<<<<<< Updated upstream
 				CA864AF6285DD8DC00029C20 /* ImageVC.swift in Sources */,
+=======
+>>>>>>> Stashed changes
 				CA7E345F285AFFD2006DACA7 /* LoginVC.swift in Sources */,
 				CA8A19562858D87B00844688 /* PostTVC.swift in Sources */,
 				CA8A194B2858D85500844688 /* User.swift in Sources */,
