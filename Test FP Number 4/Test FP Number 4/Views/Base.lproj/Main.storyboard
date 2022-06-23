@@ -1,24 +1,310 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qZn-iN-1yC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--LoginVC-->
+        <scene sceneID="A0U-6N-DbM">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="qZn-iN-1yC" customClass="LoginVC" customModule="Test_FP_Number_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ell-18-rrs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="motoFligma" translatesAutoresizingMaskIntoConstraints="NO" id="yx9-4k-6eG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="79" translatesAutoresizingMaskIntoConstraints="NO" id="odL-cm-VhX">
+                                <rect key="frame" x="20" y="194" width="374" height="262"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9P-h2-zbk">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" systemColor="systemPinkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T3k-Su-pgy">
+                                        <rect key="frame" x="0.0" y="115" width="374" height="34"/>
+                                        <color key="backgroundColor" red="0.022645924240350723" green="0.02158423513174057" blue="0.0053630247712135315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAl-im-wEt">
+                                        <rect key="frame" x="0.0" y="228" width="374" height="34"/>
+                                        <color key="backgroundColor" red="0.022645924240350723" green="0.02158423513174057" blue="0.0053630247712135315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="9qb-yu-lh0">
+                                <rect key="frame" x="107" y="506" width="200" height="107"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZu-9s-kMk">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="VR8-b7-9ma"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="wz1-nS-9IL"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lodingTapped" destination="qZn-iN-1yC" eventType="touchUpInside" id="bla-MQ-l0b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwf-24-SJ1">
+                                        <rect key="frame" x="0.0" y="67" width="200" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="GS5-qu-ZUm"/>
+                                            <constraint firstAttribute="height" constant="40" id="cbt-qY-mUo"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Registration"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="registerTapped" destination="qZn-iN-1yC" eventType="touchUpInside" id="CjN-1d-WTd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dXQ-k7-UeB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="odL-cm-VhX" firstAttribute="top" secondItem="dXQ-k7-UeB" secondAttribute="top" constant="150" id="46p-P7-l6X"/>
+                            <constraint firstItem="dXQ-k7-UeB" firstAttribute="trailing" secondItem="9qb-yu-lh0" secondAttribute="trailing" constant="107" id="CZp-J3-Ag1"/>
+                            <constraint firstItem="odL-cm-VhX" firstAttribute="leading" secondItem="dXQ-k7-UeB" secondAttribute="leading" constant="20" id="Cas-mf-Cuj"/>
+                            <constraint firstItem="yx9-4k-6eG" firstAttribute="leading" secondItem="dXQ-k7-UeB" secondAttribute="leading" id="ETN-wd-iae"/>
+                            <constraint firstItem="yx9-4k-6eG" firstAttribute="top" secondItem="ell-18-rrs" secondAttribute="top" id="V4F-FX-fcE"/>
+                            <constraint firstItem="dXQ-k7-UeB" firstAttribute="trailing" secondItem="yx9-4k-6eG" secondAttribute="trailing" id="Zt9-IQ-45G"/>
+                            <constraint firstItem="dXQ-k7-UeB" firstAttribute="trailing" secondItem="odL-cm-VhX" secondAttribute="trailing" constant="20" id="aFM-MT-Qpa"/>
+                            <constraint firstItem="9qb-yu-lh0" firstAttribute="top" secondItem="odL-cm-VhX" secondAttribute="bottom" constant="50" id="iSK-5q-G1V"/>
+                            <constraint firstItem="9qb-yu-lh0" firstAttribute="leading" secondItem="dXQ-k7-UeB" secondAttribute="leading" constant="107" id="ibk-Wu-Vce"/>
+                            <constraint firstAttribute="bottom" secondItem="yx9-4k-6eG" secondAttribute="bottom" id="pQX-kF-B5V"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTF" destination="T3k-Su-pgy" id="lIv-da-edP"/>
+                        <outlet property="passwordTF" destination="eAl-im-wEt" id="0GW-Le-xOY"/>
+                        <outlet property="stackView" destination="odL-cm-VhX" id="9m3-Gk-fo2"/>
+                        <outlet property="warnLabel" destination="w9P-h2-zbk" id="VwU-dj-xbZ"/>
+                        <segue destination="7ns-6w-8f4" kind="presentation" identifier="toFirstVC" modalPresentationStyle="fullScreen" id="HH7-YA-MS4"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exU-gJ-DiU" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-939.13043478260875" y="104.46428571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NGA-z9-dvE">
+            <objects>
+                <navigationController id="7ns-6w-8f4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MEO-JI-q06"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3vw-Q1-aDe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aMu-xb-0e3" kind="relationship" relationship="rootViewController" id="hfj-o0-yU2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ArG-cU-UNq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197" y="104"/>
+        </scene>
+        <!--PersonalArea-->
+        <scene sceneID="1Fy-hK-bC8">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PersonalAreaVC" storyboardName="PersonalArea" id="paq-eQ-DaI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gw7-G7-4Rn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U8H-O5-J35" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085" y="56"/>
+        </scene>
+        <!--AlbomsAndPhotos-->
+        <scene sceneID="noR-ay-rMD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AlbomsAndPhotos" id="QsG-gp-cbS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Bxp-4i-91g"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SUx-xv-sxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+<<<<<<< Updated upstream
+            <point key="canvasLocation" x="1107" y="86"/>
+=======
+            <point key="canvasLocation" x="1191" y="72"/>
+>>>>>>> Stashed changes
+        </scene>
+        <!--PostsAndComments-->
+        <scene sceneID="Q7I-bU-OkG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PostsAndComments" id="HdM-gb-biQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2ou-pB-KId"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dzj-3f-bA0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+<<<<<<< Updated upstream
+            <point key="canvasLocation" x="1115" y="155"/>
+=======
+            <point key="canvasLocation" x="1199" y="138"/>
+>>>>>>> Stashed changes
+        </scene>
+        <!--Map-->
+        <scene sceneID="muW-XN-9lo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map" id="t3K-1K-dTa" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1NV-sz-Es9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dB4-ON-sRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+<<<<<<< Updated upstream
+            <point key="canvasLocation" x="1045" y="121"/>
+=======
+            <point key="canvasLocation" x="1129" y="104"/>
+>>>>>>> Stashed changes
+        </scene>
+        <!--Title-->
+        <scene sceneID="ym5-MT-j2a">
+            <objects>
+                <viewController id="aMu-xb-0e3" customClass="FirstVC" customModule="Test_FP_Number_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qlp-U5-dWy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bg" translatesAutoresizingMaskIntoConstraints="NO" id="V6v-gE-ID4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="5JA-2t-8ed">
+                                <rect key="frame" x="20" y="141" width="374" height="614.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgm-bF-nPK">
+                                        <rect key="frame" x="52.5" y="0.0" width="269.5" height="123"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Photo from Mototours"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Photo from Mototours">
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="photoButton" destination="aMu-xb-0e3" eventType="touchUpInside" id="8V4-jG-DcF"/>
+                                            <segue destination="QsG-gp-cbS" kind="show" id="FV9-6n-Sea"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vx5-wA-I12">
+                                        <rect key="frame" x="52" y="182" width="270" height="123"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Motoworld News ">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" title="Motoworld News " subtitle="">
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="newsButton" destination="aMu-xb-0e3" eventType="touchUpInside" id="h2B-8x-v1e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lt1-Ic-VfM">
+                                        <rect key="frame" x="127" y="364" width="120" height="68.5"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Map">
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="mapButton" destination="aMu-xb-0e3" eventType="touchUpInside" id="P7q-O0-S0O"/>
+                                            <segue destination="t3K-1K-dTa" kind="show" id="o2N-uu-gA3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULW-8a-fNz">
+                                        <rect key="frame" x="53.5" y="491.5" width="267.5" height="123"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Stories and experiences">
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="storiesButton" destination="aMu-xb-0e3" eventType="touchUpInside" id="g25-fq-txz"/>
+                                            <segue destination="HdM-gb-biQ" kind="show" id="F4z-Ni-6um"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G23-eM-4Ws"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5JA-2t-8ed" firstAttribute="centerX" secondItem="Qlp-U5-dWy" secondAttribute="centerX" id="4s0-jA-5s2"/>
+                            <constraint firstItem="V6v-gE-ID4" firstAttribute="top" secondItem="Qlp-U5-dWy" secondAttribute="top" id="QEQ-uV-nAB"/>
+                            <constraint firstItem="V6v-gE-ID4" firstAttribute="leading" secondItem="G23-eM-4Ws" secondAttribute="leading" id="Sww-Nz-A89"/>
+                            <constraint firstItem="G23-eM-4Ws" firstAttribute="trailing" secondItem="V6v-gE-ID4" secondAttribute="trailing" id="VfG-7T-5f1"/>
+                            <constraint firstItem="5JA-2t-8ed" firstAttribute="leading" secondItem="G23-eM-4Ws" secondAttribute="leading" constant="20" id="efr-73-DJi"/>
+                            <constraint firstItem="5JA-2t-8ed" firstAttribute="centerY" secondItem="Qlp-U5-dWy" secondAttribute="centerY" id="i6x-m0-qyp"/>
+                            <constraint firstAttribute="bottom" secondItem="V6v-gE-ID4" secondAttribute="bottom" id="mmk-OH-IFt"/>
+                            <constraint firstItem="G23-eM-4Ws" firstAttribute="trailing" secondItem="5JA-2t-8ed" secondAttribute="trailing" constant="20" id="wDG-Mf-Fu0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Z2G-in-yfk">
+                        <barButtonItem key="leftBarButtonItem" title="Sing Out" image="arrowshape.turn.up.backward.2" catalog="system" id="pur-DF-vFm">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="singOutButton:" destination="aMu-xb-0e3" id="rfX-IP-Cjh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="person.circle" catalog="system" id="tDl-k3-bNk">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="personalAccoutButton:" destination="aMu-xb-0e3" id="Dni-88-OXV"/>
+                                <segue destination="paq-eQ-DaI" kind="show" id="l6I-Mx-t0i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjH-Yw-V4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556.52173913043487" y="104.46428571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bg" width="1125" height="2436"/>
+        <image name="arrowshape.turn.up.backward.2" catalog="system" width="128" height="86"/>
+        <image name="motoFligma" width="1106" height="635"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
