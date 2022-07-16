@@ -8,7 +8,6 @@
 import Firebase
 import SafariServices
 import UIKit
-import SafariServices
 
 final class FirstVC: UIViewController {
     override func viewDidLoad() {
@@ -30,11 +29,7 @@ final class FirstVC: UIViewController {
     
     @IBAction func newsButton() {
         if let url = URL(string: "https://in-moto.ru/novosti/") {
-<<<<<<< Updated upstream:Test FP Number 4/Test FP Number 4/Controllers/Login and First VC/FirstVC.swift
             let svc = SFSafariViewController(url: url)
-=======
-            let svc = SFSafariViewController(url: url )
->>>>>>> Stashed changes:Test FP Number 4/Test FP Number 4/Controllers/FirstVC.swift
             present(svc, animated: true, completion: nil)
         }
     }
